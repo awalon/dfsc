@@ -1,6 +1,12 @@
 # Detect file system changes
 
-[![Project: dfsc](https://img.shields.io/badge/Project-dfsc-red.svg?style=flat-square)](https://github.com/awalon/dfsc/) [![License: APL](https://img.shields.io/badge/License-MIT%2FApache--2.0-blue?style=flat-square)](LICENSE) [![GitHub issues](https://img.shields.io/github/issues/awalon/dfsc?style=flat-square)](https://github.com/awalon/dfsc/issues) [![Rust](https://img.shields.io/badge/Rust-red?style=flat-square&logo=rust)](https://www.rust-lang.org/) [![GitHub forks](https://img.shields.io/github/forks/awalon/dfsc?style=flat-square)](https://github.com/awalon/dfsc/network) [![GitHub stars](https://img.shields.io/github/stars/awalon/dfsc?style=flat-square)](https://github.com/awalon/dfsc/stargazers)
+[![Project: dfsc](https://img.shields.io/badge/Project-dfsc-red.svg?style=flat-square)](https://github.com/awalon/dfsc/)
+[![Rust](https://img.shields.io/badge/Rust-red?style=flat-square&logo=rust)](https://www.rust-lang.org/)
+[![License: APL](https://img.shields.io/badge/License-MIT%2FApache--2.0-blue?style=flat-square)](LICENSE)
+[![Rust](https://github.com/awalon/dfsc/actions/workflows/rust.yml/badge.svg)](https://github.com/awalon/dfsc/actions/workflows/rust.yml) 
+[![GitHub issues](https://img.shields.io/github/issues/awalon/dfsc?style=flat-square)](https://github.com/awalon/dfsc/issues) 
+[![GitHub forks](https://img.shields.io/github/forks/awalon/dfsc?style=flat-square)](https://github.com/awalon/dfsc/network) 
+[![GitHub stars](https://img.shields.io/github/stars/awalon/dfsc?style=flat-square)](https://github.com/awalon/dfsc/stargazers)
 
 ## Notice
 
