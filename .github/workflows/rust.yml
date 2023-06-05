@@ -13,7 +13,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [debian-latest] #, windows-latest, macos-latest]
+        os: [debian-latest, windows-latest, macos-latest]
         rust: [stable]
 #        include:
 #        - os: debian-latest
