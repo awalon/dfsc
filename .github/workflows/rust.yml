@@ -35,11 +35,20 @@ jobs:
       # SCCACHE_RECACHE: 1 # Uncomment this to clear cache, then comment it back out
       
     steps:
-    - name: Run sccache-cache
-      uses: mozilla-actions/sccache-action@v0.0.3    
-    - name: Run sccache stat for check
-      shell: bash
-      run: ${SCCACHE_PATH} --show-stats
+    - uses: actions/cache@v3
+      with:
+        path: |
+          ~/.cargo/bin/
+          ~/.cargo/registry/index/
+          ~/.cargo/registry/cache/
+          ~/.cargo/git/db/
+          target/
+        key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+#    - name: Run sccache-cache
+#      uses: mozilla-actions/sccache-action@v0.0.3    
+#    - name: Run sccache stat for check
+#      shell: bash
+#      run: ${SCCACHE_PATH} --show-stats
     - uses: actions/checkout@v3
 #    - name: Install sccache (debian-latest)
 #      if: matrix.os == 'debian-latest'
@@ -87,10 +96,12 @@ jobs:
 #      run: sccache --show-stats
 #    - name: Stop sccache server
 #      run: sccache --stop-server || true
+    - name: Release
+      uses: softprops/action-gh-release@v1
     - name: Archive production artifacts for ${{ matrix.os }}
       uses: actions/upload-artifact@v3
       with:
-        name: dist-without-markdown
+        name: dist-${{ matrix.os }}-release
 #          target/*/
         path: |
           target/**/dfsc*
