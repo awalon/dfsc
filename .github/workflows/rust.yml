@@ -87,13 +87,13 @@ jobs:
 #      run: sccache --show-stats
 #    - name: Stop sccache server
 #      run: sccache --stop-server || true
-    - name: Archive production artifacts
+    - name: Archive production artifacts for ${{ matrix.os }}
       uses: actions/upload-artifact@v3
       with:
         name: dist-without-markdown
 #          target/*/
         path: |
-          target
+          target/**/dfsc*
           !target/**/*.md
 #    - name: Archive code coverage results
 #      uses: actions/upload-artifact@v3
