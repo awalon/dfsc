@@ -34,6 +34,8 @@ jobs:
             os: macos-latest
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-latest
+          - target: x86_64-pc-windows-msvc
+            os: windows-latest
           - target: x86_64-apple-darwin
             os: macos-latest
           # Universal macOS binary is supported as universal-apple-darwin.
@@ -62,7 +64,7 @@ jobs:
           # (required) GitHub token for uploading assets to GitHub Releases.
           token: ${{ secrets.GITHUB_TOKEN }}
           # Comma-separated list of algorithms to be used for checksum (sha256, sha512, sha1, or md5)
-          checksum: sha512 # optional
+          #checksum: sha512 # optional
 
     #- name: Build and upload Rust binary to GitHub Releases
       # You may pin to the exact commit or the version.
