@@ -1,6 +1,6 @@
 [package]
 name = "dfsc"
-version = "0.1.1"
+version = "0.1.2"
 description = "Detect file system changes (dfsc) by monitoring a directory recursive and detect changes."
 license = "MIT OR Apache-2.0"
 authors = [ "Ralf W. <ralf@awalon.de>" ]
