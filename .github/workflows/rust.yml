@@ -122,11 +122,11 @@ jobs:
         with:
           name: dist-${{ matrix.os }}-release
           path: |
-            target/*/dfsc*
-            !target/**/deps*
-            !target/**/*.pdb
-            !target/**/*.d
-            !target/**/*.md
+            target/*/*/dfsc*
+            !target/*/*/deps*
+            !target/*/*/*.pdb
+            !target/*/*/*.d
+            #!target/*/*/*.md
 
 
 #  build:
