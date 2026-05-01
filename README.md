@@ -1,3 +1,13 @@
+# This project has moved
+
+> [!WARNING]  
+> This repository is now maintained at
+> [https://codeberg.org/Awalon/dfsc](https://codeberg.org/Awalon/dfsc).
+
+> [!CAUTION]  
+> This GitHub mirror may be out of date. Please file issues and
+> contributions on Codeberg.
+
 # Detect file system changes
 
 [![Project: dfsc](https://img.shields.io/badge/Project-dfsc-red.svg?style=flat-square)](https://github.com/awalon/dfsc/)
